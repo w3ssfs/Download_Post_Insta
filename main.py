@@ -4,7 +4,7 @@ import instaloader
 # Carregar a Lib e faz Login com a conta desejada #
 
 L = instaloader.Instaloader()
-L.login('USER', 'SENHA')
+L.login('USER do perfil', 'SENHA')
 
 # Carrega todos os posts do perfil escolhido #
 posts = instaloader.Profile.from_username(L.context, 'PERFIL ESCOLHIDO').get_posts()
